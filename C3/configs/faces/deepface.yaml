@@ -1,0 +1,4 @@
+model_name: vgg-face
+detector_backend: opencv
+frame_step: 5
+save_dir: features/video/vgg-face

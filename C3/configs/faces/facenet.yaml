@@ -1,0 +1,5 @@
+model_name: facenet
+backend: mtcnn
+frame_step: 5
+resize: 160
+save_dir: features/video/facenet

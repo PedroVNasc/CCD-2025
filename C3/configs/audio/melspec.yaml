@@ -1,0 +1,6 @@
+model_name: MelSpectrogram
+sample_rate: 16000
+n_fft: 400
+hop_length: 160
+n_mels: 64
+save_dir: features/audio/melspec

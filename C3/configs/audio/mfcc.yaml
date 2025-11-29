@@ -1,0 +1,7 @@
+model_name: MFCC
+sample_rate: 16000
+n_mfcc: 13
+n_fft: 400
+hop_length: 160
+n_mels: 23
+save_dir: features/audio/mfcc
