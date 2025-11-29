@@ -1,0 +1,6 @@
+model_name: distilbert-base-uncased
+max_length: 64
+batch_size: 16
+pooling: mean
+device: cpu
+save_dir: features/text/distilbert-base-uncased
