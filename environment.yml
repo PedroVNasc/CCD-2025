@@ -1,0 +1,33 @@
+name: ccd-2025
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - jupyter
+  - ipykernel
+  - ffmpeg
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - tqdm
+  - pytorch
+  - torchaudio
+  - opencv
+  - scikit-learn
+  - pip:
+    - transformers>=4.30.0
+    - facenet-pytorch>=2.5.0
+    - deepface>=0.0.79
+    - sentence-transformers>=2.2.0
+    - xgboost>=2.0.0
+    - lightgbm>=4.0.0
+    - imbalanced-learn>=0.11.0
+    - plotly>=5.17.0
+    - tensorflow>=2.13.0  # Required by deepface
+    - Pillow>=10.0.0
+

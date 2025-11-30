@@ -1,0 +1,22 @@
+modalities:
+  text:
+    enabled: true
+    path: features/text/roberta-base/train
+  audio:
+    enabled: true
+    path: features/audio/mfcc/train
+  video:
+    enabled: false
+    path: features/video/facenet/train
+
+model:
+  type: mlp             # mlp or logistic
+  hidden_size: 256
+  dropout: 0.3
+
+training:
+  epochs: 30
+  batch_size: 64
+  learning_rate: 1e-3
+  test_split: 0.2
+  seed: 42
