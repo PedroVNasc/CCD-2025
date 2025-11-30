@@ -1,22 +1,22 @@
 modalities:
   text:
     enabled: true
-    path: features/text/roberta-base/train
+    path: features/text/roberta-base
   audio:
     enabled: true
-    path: features/audio/mfcc/train
+    path: features/audio/wav2vec2-base
   video:
     enabled: false
-    path: features/video/facenet/train
+    path: features/video/vgg-face
 
 model:
-  type: mlp             # mlp or logistic
   hidden_size: 256
   dropout: 0.3
 
 training:
-  epochs: 30
+  epochs: 500
   batch_size: 64
   learning_rate: 1e-3
   test_split: 0.2
   seed: 42
+  normalize: false

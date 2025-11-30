@@ -1,0 +1,24 @@
+modalities:
+  text:
+    enabled: true
+    path: features/text/roberta-base
+  audio:
+    enabled: true
+    path: features/audio/wav2vec2-base
+  video:
+    enabled: false
+    path: features/video/vgg-face
+
+model:
+  hidden_size: 1024
+  dropout: 0.3
+
+training:
+  epochs: 50
+  batch_size: 64
+  learning_rate: 1e-3
+  test_split: 0.2
+  seed: 42
+  normalize: false
+  early_stopping: false
+  patience: 10

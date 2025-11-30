@@ -1,0 +1,22 @@
+modalities:
+  text:
+    enabled: true
+    path: features/text/roberta-base
+  audio:
+    enabled: true
+    path: features/audio/wav2vec2-base
+  video:
+    enabled: false
+    path: features/video/vgg-face
+
+model:
+  kernel: rbf
+  C: 1.0
+  gamma: scale
+  class_weight: balanced
+
+training:
+  test_split: 0.2
+  seed: 42
+  normalize: true
+

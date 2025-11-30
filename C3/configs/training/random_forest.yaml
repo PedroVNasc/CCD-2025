@@ -1,0 +1,24 @@
+modalities:
+  text:
+    enabled: true
+    path: features/text/roberta-base
+  audio:
+    enabled: true
+    path: features/audio/wav2vec2-base
+  video:
+    enabled: false
+    path: features/video/vgg-face
+
+model:
+  n_estimators: 200
+  max_depth: 20
+  min_samples_split: 5
+  min_samples_leaf: 2
+  class_weight: balanced
+  max_features: sqrt
+
+training:
+  test_split: 0.2
+  seed: 42
+  normalize: false
+
